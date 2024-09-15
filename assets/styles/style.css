@@ -1,0 +1,701 @@
+/* impor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #dde5f5;
+}
+
+a{
+    text-decoration: none;
+    color: #261aad;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #1c1e53;
+}
+
+nav{
+    background-color: #dde5f5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+nav .chelsea,
+footer .chelsea{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-weight: 600;
+}
+
+nav button{
+    color: #1c1e53;
+    padding: 12px 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: #261aad;
+    border-color: #261aad;
+    color: #dde5f5;
+}
+
+nav button#tombol-menu{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.jumbotron{
+    padding: 90px 85px;
+    background: linear-gradient(90deg, rgba(5,0,164,1) 40%, rgba(11,0,115,1) 73%);
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7)
+}
+
+.jumbotron .kiri{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.jumbotron .kiri h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+    color: #dde5f5;
+}
+
+.jumbotron .kiri p{
+    color: #dde5f5;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.jumbotron .kiri button{
+    padding: 18px 30px;
+    margin-top: 40px;
+    color: #dde5f5;
+    font-size: 18px;
+    background-color: #0b0080;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.jumbotron .kiri button:hover{
+    background-color: #09006b;
+    transition: .3s;
+}
+
+.jumbotron .kanan img{
+    width: 500px;
+}
+
+#content{
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+article{
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    margin-right: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+article h3{
+    align-self: flex-start;
+}
+
+article .gambar figure img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+article .gambar, aside .gambar{
+    border-radius: 10px 10px 0 0;
+}
+
+article p{
+    font-size: 20px;
+    color: #261aad;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 36px;
+    font-weight: 500;
+    text-indent: 5%;
+    font-weight: 600;
+}
+
+aside {
+    width: 450px;
+    padding: 60px 50px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: justify;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    align-self: baseline;
+}
+
+aside h3{
+    font-size: 26px;
+    color: #261aad;
+    margin-bottom: 28px;
+    align-self: flex-start;
+}
+
+aside ul li{
+    font-size: 18px;
+    list-style-type: circle;
+    word-spacing: 1px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 10px;
+    color: #261aad;
+    font-weight: 600;
+}
+
+aside .gambar figure img {
+    width: 380px;
+    border-radius: 5px;
+}
+
+figcaption{
+    font-size: 18px;
+    text-align: center;
+    color: #261aad;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.players{
+    padding: 110px 85px;
+    background: linear-gradient(270deg, rgba(5,0,164,1) 40%, rgba(11,0,115,1) 65%);
+    border-radius: 0 0 20px 20px;
+}
+
+.players h3, 
+article h3,
+.trophies h3{
+    font-size: 32px;
+    color: #261aad;
+}
+
+.players h3, .putih{
+    color: #dde5f5;
+}
+
+.players .player-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.players .player-items .player{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #dde5f5;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.6)
+}
+
+.players .player-items .player:hover{
+    background-color: #b2bfd5;
+}
+
+.players .player-items .player .gambar-player{
+    width: 50%;
+    align-self: center;
+}
+
+.players .player-items .player h4{
+    font-size: 18px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.trophies{
+    padding: 110px 85px;
+}
+
+.trophies p{
+    font-size: 20px;
+    margin: 30px 0;
+    word-spacing: 1px;
+    line-height: 35px;
+    color: #3b2dd8;
+    font-weight: 500;
+}
+
+.trophies table{
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.trophies table thead tr .competition{
+    width: 35%;
+}
+
+.trophies table thead tr .total{
+    width: 25%;
+}
+
+.trophies table thead tr .years{
+    width: 60%;
+}
+
+.trophies table thead tr th{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trophies table tbody tr td{
+    border-top: 2px solid #c4c0ed;
+    border-bottom: 2px solid #c4c0ed;
+    color: black;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    word-spacing: 1px;
+}
+
+.trophies table tbody tr :nth-child(1){
+    text-align: left;
+}
+
+footer{
+    background: linear-gradient(180deg, rgba(5,0,152,1) 40%, rgba(11,0,115,1) 73%);
+    padding: 65px;
+    color: #dde5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer #chelsea-bawah:hover{
+    color: #b3caf8;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .media-sosial{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .chelsea:hover{
+    color: #bcd3ff;
+}
+
+footer .media-sosial a i{
+    color: #dde5f5;
+}
+
+@media screen and (max-width: 1250px) {
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .jumbotron .kiri h3{
+        font-size: 38px;
+    }
+
+    .jumbotron .kiri p{
+        font-size: 20px;
+    }
+
+    .jumbotron .kanan img{
+        width: 380px;
+    }
+
+    #content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    article {
+        padding: 0;
+        margin-right: 0px;
+        padding: 70px 55px;
+    }
+
+    article figure img{
+        width: 80%;
+    }
+
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    aside {
+        padding: 70px 55px;
+        width: 100%;
+    }
+
+    aside .gambar figure img{
+        width: 100%;
+    }
+
+    aside ul li{
+        line-height: 35px;
+    }
+
+    .players h3,
+    aside h3,
+    .trophies h3, 
+    article h3{
+        font-size: 38px;
+    }
+
+    article p, aside ul li, .trophies p{
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .players .player-items{
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .players .player-items .player{
+        width: 25%;
+    }
+
+    .players .player-items .player h4{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    .jumbotron{
+        flex-direction: column-reverse;
+        background: linear-gradient(0deg, rgba(5,0,164,1) 40%, rgba(11,0,115,1) 73%);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .jumbotron .kiri h3{
+        font-size: 40px;
+    }
+
+    .jumbotron .kiri p{
+        font-size: 24px;
+    }
+
+    article h3, 
+    aside h3, 
+    .players h3, 
+    .trophies h3{
+        font-size: 36px;
+        margin: 20px 0;
+    }
+
+    article p, aside ul li, .trophies p{
+        font-size: 22px;
+        margin: 15px 0 0 0;
+        line-height: 40px;
+        font-weight: 600;
+    }
+
+    .players .player-items{
+        margin-top: 50px;
+    }
+
+    .players .player-items .player .gambar-player{
+        width: 60%;
+    }
+
+    .players .player-items .player h4{
+        font-size: 18px;
+    }
+
+    .trophies p{
+        margin: 25px 0;
+    }  
+
+    .trophies table{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        padding: 0 42px;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav.buka .chelsea{
+        display: none;
+    }
+
+    nav.buka ul{
+        display: flex;
+    }
+
+    nav button#tombol-menu{
+        display: flex;
+        font-size: 28px;
+    }
+
+    .jumbotron{
+        padding: 42px;
+    }
+
+    .jumbotron .kanan img{
+        width: 280px;
+    }
+
+    #content {
+        padding: 60px 42px;
+    }
+
+    aside, article{
+        padding: 85px 35px;
+    }
+
+    aside .gambar figure img, article .gambar figure img{
+        width: 100%;
+    }
+
+    .players{
+        padding: 85px 42px;
+    }
+
+    .players .player-items{
+        gap: 8px;
+    }
+
+    .trophies{
+        padding: 85px 42px;
+    }
+
+    footer{
+        padding: 45px;
+    }
+
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer a, 
+    footer .media-sosial{
+        display: none;
+    } 
+
+}
+
+@media screen and (max-width: 590px) {
+    nav{
+        height: 65px;
+        padding: 0 32px;
+    }
+
+    nav.buka ul{
+        gap: 12px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav .chelsea{
+        font-size: 22px;
+    }
+
+    nav button#tombol-menu{
+        padding: 5px;
+    }
+
+    .jumbotron{
+        margin-top: 65px;
+    }
+
+    .jumbotron .kiri h3{
+        font-size: 30px;
+    }
+
+    .jumbotron .kiri p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .jumbotron .kiri button{
+        width: 100%;
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .jumbotron .kanan img {
+        width: 200px;
+    }
+
+    article h3, 
+    aside h3, 
+    .players h3, 
+    .trophies h3{
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    #content{
+        padding: 40px 8px;
+    }
+
+    aside .gambar figure img, article .gambar figure img{
+        width: 100%;
+    }
+
+    article, aside {
+        gap: 20px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+        padding: 25px 15px;
+    }
+
+    article p{
+        text-indent: 10%;
+    }
+
+    article p, aside ul li{
+        font-size: 16px;
+        margin: 15px 0 0 0;
+        line-height: 26.5px;
+        font-weight: 600;
+    }
+
+    aside {
+        padding: 35px 15px 35px 23px;
+    }
+
+    figcaption{
+        font-size: 14px;
+    }
+
+    .players .player-items{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .players .player-items .player{
+        width: 43%;
+        padding: 15px;
+    }
+
+    .players .player-items .player h4{
+        font-size: 13px;
+    }
+
+    .trophies table thead tr th, 
+    .trophies table tbody tr td,
+    .trophies p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .trophies p{
+        line-height: 21px;
+        font-size: 14px;
+        margin: 15px 0;
+        font-weight: 600;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+    footer p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+}

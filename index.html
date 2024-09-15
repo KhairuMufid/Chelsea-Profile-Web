@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import dari boxicon untuk berbagai simbol/logo yg dibutuhkan  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- eksternal CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Chelsea FC Profile</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- navigasi bar halaman web -->
+      <nav>
+        <a href="#jumbotron" class="chelsea">Chelsea FC</a>
+        <ul>
+          <li><a href="#jumbotron">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#players">Players</a></li>
+          <li><a href="#trophies">Trophies</a></li>
+        </ul>
+        <button id="tombol-menu" onclick="bukaMenu()">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+
+      <!-- konten jumbotron -->
+      <div class="jumbotron" id="jumbotron">
+        <div class="kiri">
+          <h3>Welcome to Chelsea Football Club Page!</h3>
+          <p>
+            The greatest football club in Europe. In this page, you can see all
+            about our history, players, and trophies.
+          </p>
+          <a href="https://www.chelseafc.com/en" target="_blank"
+            ><button>Visit Chelsea's Web</button></a
+          >
+        </div>
+        <div class="kanan">
+          <img src="assets/image/Chelsea_Logo.png" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- konten artikel -->
+      <div id="content">
+        <article class="about" id="about">
+          <h3>About Us</h3>
+          <div class="gambar">
+            <figure>
+              <img
+                src="assets/image/stamford_bridge.jpg"
+                alt="Stamford Bridge Stadium"
+              />
+              <figcaption>Stamford Bridge Stadium</figcaption>
+            </figure>
+          </div>
+          <p>
+            Chelsea Football Club, founded in 1905, is one of the most
+            successful and widely recognized football clubs in England. The club
+            is based in the heart of Fulham, London, and has made Stamford
+            Bridge its iconic home. Known for its distinctive blue kits, Chelsea
+            has become synonymous with excellence on the field, boasting a
+            stadium that holds over 40,000 passionate supporters. Stamford
+            Bridge is not just a venue; it’s a fortress with deep historical
+            significance, witnessing countless moments of football brilliance
+            and hosting some of the most memorable matches in the sport’s
+            history. Over the years, Chelsea has built a reputation for playing
+            attractive, dynamic football, blending technical skill with tactical
+            discipline, and consistently producing and nurturing global talents
+            who have gone on to shine on the international stage.
+          </p>
+          <p>
+            The club’s success is not just limited to domestic competitions but
+            extends to the global arena as well. Chelsea has secured multiple
+            Premier League titles, FA Cups, and League Cups, establishing itself
+            as a dominant force in English football. On the international stage,
+            Chelsea’s achievements are equally impressive, winning prestigious
+            honors such as the UEFA Champions League twice, in 2012 and 2021,
+            along with the UEFA Europa League and the FIFA Club World Cup. The
+            club’s consistent presence in elite European competitions has
+            elevated its stature as one of the most formidable football clubs
+            worldwide. Chelsea’s legacy is backed by world-class players and
+            visionary managers who have played a pivotal role in shaping the
+            club’s success, cementing its place as a true powerhouse in the
+            modern football era.
+          </p>
+        </article>
+
+        <!-- konten samping -->
+        <aside class="history" id="history">
+          <h3>Our History</h3>
+          <div class="gambar">
+            <figure>
+              <img
+                src="assets/image/chelsea_team_1950.jpg"
+                alt="Chelsea Team 1905"
+              />
+              <figcaption>Chelsea Team 1950</figcaption>
+            </figure>
+          </div>
+          <ul>
+            <li>
+              Founded in 1905 by businessman Gus Mears with the goal of
+              establishing a top-tier football club at Stamford Bridge.
+            </li>
+            <li>
+              Quickly gained attention by joining the Football League and
+              assembling strong squads in the early years.
+            </li>
+            <li>
+              First major trophy: Won the First Division title in 1955, marking
+              their first significant success.
+            </li>
+            <li>
+              Faced fluctuating fortunes in the following decades, with ups and
+              downs in performance and success.
+            </li>
+            <li>
+              In 2003, the club was purchased by Roman Abramovich, leading to a
+              new era of investment and success.
+            </li>
+            <li>
+              Major trophies under Abramovich: Several Premier League titles, FA
+              Cups, and two UEFA Champions League victories (in 2012 and 2021).
+            </li>
+            <li>
+              Today, Chelsea remains one of Europe's elite football clubs,
+              consistently competing at the highest level in domestic and
+              international competitions.
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- section 1 -->
+      <section class="players" id="players">
+        <h3>Our 2024/2025 Squad</h3>
+        <div class="player-items">
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Felix.png"
+              alt="Joao Felix"
+            />
+            <hr />
+            <h4>Felix</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Palmer.png"
+              alt="Cole Palmer"
+            />
+            <hr />
+            <h4>Palmer</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Mudryk.png"
+              alt="Mudryk"
+            />
+            <hr />
+            <h4>Mudryk</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Nkunku.png"
+              alt="Christopher Nkunku"
+            />
+            <hr />
+            <h4>Nkunku</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Jackson.png"
+              alt="Nicholas Jackson"
+            />
+            <hr />
+            <h4>Jackson</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Madueke.png"
+              alt="Noni Madueke"
+            />
+            <hr />
+            <h4>Madueke</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Caicedo.png"
+              alt="Moises Caicedo"
+            />
+            <hr />
+            <h4>Caicedo</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Fernandez.png"
+              alt="Enzo Fernandez"
+            />
+            <hr />
+            <h4>Fernandez</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Lavia.png"
+              alt="Romeo Lavia"
+            />
+            <hr />
+            <h4>Lavia</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Gusto.png"
+              alt="Malo Gusto"
+            />
+            <hr />
+            <h4>Gusto</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Disasi.png"
+              alt="Axel Disasi"
+            />
+            <hr />
+            <h4>Disasi</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Colwill.png"
+              alt="Levi Colwill"
+            />
+            <hr />
+            <h4>Colwill</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Fofana.png"
+              alt="Wesley Fofana"
+            />
+            <hr />
+            <h4>Fofana</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Cucurella.png"
+              alt="Marc Cucurella"
+            />
+            <hr />
+            <h4>Cucurella</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/James.png"
+              alt="Reece James"
+            />
+            <hr />
+            <h4>James</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Badiashille.png"
+              alt="Benoit Badiashile"
+            />
+            <hr />
+            <h4>Badiashile</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Petrovic.png"
+              alt="Djordje Petrovic"
+            />
+            <hr />
+            <h4>Petrovic</h4>
+          </div>
+          <div class="player">
+            <img
+              class="gambar-player"
+              src="assets/image/players/Robert Sanchez.png"
+              alt="Robert Sanchez"
+            />
+            <hr />
+            <h4>Sanchez</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="trophies" id="trophies">
+        <h3>Trophies</h3>
+        <p>Here we detail each and every one of our major trophy triumphs...</p>
+        <table>
+          <thead>
+            <tr>
+              <th class="competition">COMPETITION</th>
+              <th class="total">TOTAL</th>
+              <th class="years">YEARS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UEFA Champions League</td>
+              <td>2</td>
+              <td>2012, 2021</td>
+            </tr>
+            <tr>
+              <td>First Division/Premier League</td>
+              <td>6</td>
+              <td>1955, 2005, 2006, 2010, 2015, 2017</td>
+            </tr>
+            <tr>
+              <td>FA Cup</td>
+              <td>8</td>
+              <td>1970, 1997, 2000, 2007, 2009, 2010, 2012, 2018</td>
+            </tr>
+            <tr>
+              <td>League Cup</td>
+              <td>5</td>
+              <td>1965, 1998, 2005, 2007, 2015</td>
+            </tr>
+            <tr>
+              <td>UEFA Europa League</td>
+              <td>2</td>
+              <td>2013, 2019</td>
+            </tr>
+            <tr>
+              <td>UEFA Cup Winners' Cup</td>
+              <td>2</td>
+              <td>1971, 1998</td>
+            </tr>
+            <tr>
+              <td>FIFA Club World Cup</td>
+              <td>1</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>UEFA Super Cup</td>
+              <td>2</td>
+              <td>1998, 2021</td>
+            </tr>
+            <tr>
+              <td>Charity/Community Shield</td>
+              <td>4</td>
+              <td>1955, 2000, 2005, 2009</td>
+            </tr>
+            <tr>
+              <td>Full Members' Cup</td>
+              <td>2</td>
+              <td>1986, 1990</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- konten footer -->
+    <footer>
+      <a class="chelsea putih" href="#jumbotron">Chelsea FC</a>
+      <p>Made By Muhammad Khairu Mufid &#169; 2024</p>
+      <div class="media-sosial">
+        <a href="https://github.com/KhairuMufid" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://instagram.com/khairumufid" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/muhammadkhairumufid/"
+          target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
